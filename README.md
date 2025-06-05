@@ -26,11 +26,8 @@ agent/
 server/
 ```
 
-### 3. 处理流程图
-![处理流程图](image/Vigilix%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%88%E8%AF%A6%E7%BB%86%EF%BC%89.png)
-
-### 4. 时序图
-![时序图](image/1749118293101.jpg)
+### 3. 时序图
+![输入图片说明](image/Vigilix%E6%97%B6%E5%BA%8F%E5%9B%BE-20250524.png)
 
 ## 三、采用的技术栈
 
