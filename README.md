@@ -1,6 +1,6 @@
 # Vigilix 项目详细介绍
 
-<img src="C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605173429202.png" alt="image-20250605173429202" style="zoom: 67%;" />
+![logo](image/logo.png)
 
 ## 一、项目概述
 
