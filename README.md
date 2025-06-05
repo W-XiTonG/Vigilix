@@ -27,7 +27,7 @@ server/
 ```
 
 ### 3. 时序图
-![输入图片说明](image/Vigilix%E6%97%B6%E5%BA%8F%E5%9B%BE-20250524.png)
+![时序图](image/Vigilix%E6%97%B6%E5%BA%8F%E5%9B%BE-20250524.png)
 
 ## 三、采用的技术栈
 
