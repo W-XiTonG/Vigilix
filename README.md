@@ -1,6 +1,6 @@
 # Vigilix 项目详细介绍
 
-![logo](image/logo.png)
+![logo](image/logo.jpg)
 
 ## 一、项目概述
 
