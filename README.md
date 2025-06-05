@@ -597,4 +597,8 @@ go build -o vigilix-push main.go
 
 - QQ：2751799737
 
+- Gitee：https://gitee.com/Xi_Tong/vigilix
+
+- GitHub：https://github.com/W-XiTonG/Vigilix
+
   
