@@ -26,6 +26,12 @@ agent/
 server/
 ```
 
+### 3. 处理流程图
+![处理流程图](image/Vigilix%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%88%E8%AF%A6%E7%BB%86%EF%BC%89.png)
+
+### 4. 时序图
+![时序图](image/Vigilix%E6%97%B6%E5%BA%8F%E5%9B%BE-20250524.png)
+
 ## 三、采用的技术栈
 
 ### 1. 编程语言
@@ -88,7 +94,7 @@ Push 支持通过 POST 方式对接 Server 服务端，实现告警及数据推�
 
 ### 1. 客户端与服务端交互流程
 
-![image-20250605172327221](C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605172327221.png)
+![客户端与服务端交互流程](image/1749117804598.jpg)
 
 1. 客户端启动，读取配置文件，建立与服务端的 WebSocket 连接。
 2. 客户端发送登录信息（用户名、密码、命令）给服务端。
@@ -97,7 +103,7 @@ Push 支持通过 POST 方式对接 Server 服务端，实现告警及数据推�
 
 ### 2. 代理端与服务端交互流程
 
-![image-20250605172333067](C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605172333067.png)
+![代理端与服务端交互流程](1749117834972.jpg)
 
 1. 代理端启动，读取配置文件，建立与服务端的 WebSocket 连接。  
 2. 代理端根据服务端通知采集主机的系统指标数据。  
@@ -107,7 +113,7 @@ Push 支持通过 POST 方式对接 Server 服务端，实现告警及数据推�
 
 ### 3. 服务端与 zabbix 交互流程 
 
-![image-20250605172510836](C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605172510836.png)
+![服务端与 zabbix 交互流程](image/1749117870608.jpg)
 
 1. **初始化连接** 
 服务端加载 Zabbix API 配置（URL、用户名、密码），创建 HTTP 客户端并发送登录请求。 
@@ -130,7 +136,7 @@ Zabbix 返回认证令牌（token），服务端保存该 token 用于后续 API
 
 ### 4. 服务端与推送端交互流程
 
-![image-20250605172605324](C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605172605324.png)
+![服务端与推送端交互流程](image/1749117900073.jpg)
 
 1. 服务端在处理数据过程中，如果检测到告警信息（包括系统指标阈值告警和 Zabbix 告警），触发推送机制。
 2. 服务端将告警信息（包括告警类型、时间、详细描述等）发送给推送端。
@@ -142,7 +148,7 @@ Zabbix 返回认证令牌（token），服务端保存该 token 用于后续 API
 
 ### 5. 推送端的独立工作流程
 
-![image-20250605172611307](C:\Users\XTong\AppData\Roaming\Typora\typora-user-images\image-20250605172611307.png)
+![推送端的独立工作流程](image/1749117956983.jpg)
 
 1. 推送端启动，读取配置文件，初始化与第三方平台的连接。
 2. 推送端监听来自服务端的消息，等待告警信息或其他需要推送的内容。
