@@ -1,0 +1,29 @@
+# 服务器地址
+ServerAddr: "ws://123.56.12.203:3000"
+
+# 当前agent_ID
+AgentId: 1
+# 当前agent鉴权密钥
+AuthenticationKey: "123"
+# 重连时间间隔
+ReconnectTime: 10s
+
+# 告警（程序自带监控，目前支持Inode节点、磁盘、CPU、内存告警）
+Alarm:
+  # 是否开启告警
+  Status: true
+  # 阈值%
+  Threshold: 70.0
+  # 监控间隔,单位：s为秒，m为分钟
+  CheckInterval: 10s
+  # 当前主机的网卡名称
+  NetworkCard: WLAN
+  # 告警队列数量
+  Queue: 10
+
+# 日志配置
+LogGer:
+  Status: true  # 日志总控制
+  OutStatus: true # 是否控制台输出
+  FileStatus: true # 是否日志文件控制
+  LogFile: logs/

@@ -1,0 +1,80 @@
+2025/04/12 00:51:13 server.go:178: Listening on port 8080
+2025/04/12 00:51:21 server.go:149: 
+接收到关闭信号，关闭程序...
+2025/05/16 20:29:36 main.go:25: Version: V1.0.1
+2025/05/16 20:29:36 enterpriseWeChat.go:71: Error sending message: API error: 40058 - msgtype exceed max length 16. invalid Request Parameter, hint: [1747398575421711962807586], from ip: 36.129.87.40, more info at https://open.work.weixin.qq.com/devtool/query?e=40058
+2025/05/16 20:31:55 main.go:25: Version: V1.0.1
+2025/05/16 20:31:55 enterpriseWeChat.go:73: Message sent successfully
+2025/05/16 20:36:41 main.go:25: Version: V1.0.1
+2025/05/16 20:36:42 enterpriseWeChat.go:74: Message sent successfully
+2025/05/16 20:37:00 main.go:25: Version: V1.0.1
+2025/05/16 20:37:01 enterpriseWeChat.go:74: Message sent successfully
+2025/05/16 20:38:18 main.go:25: Version: V1.0.1
+2025/05/16 20:38:19 enterpriseWeChat.go:76: Message sent successfully
+2025/05/16 20:39:13 main.go:25: Version: V1.0.1
+2025/05/16 20:39:15 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:41:04 main.go:25: Version: V1.0.1
+2025/05/16 20:41:04 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:42:34 main.go:25: Version: V1.0.1
+2025/05/16 20:42:35 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:42:54 main.go:25: Version: V1.0.1
+2025/05/16 20:42:54 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:43:08 main.go:25: Version: V1.0.1
+2025/05/16 20:43:09 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:43:42 main.go:25: Version: V1.0.1
+2025/05/16 20:43:42 enterpriseWeChat.go:75: Message sent successfully
+2025/05/16 20:45:19 main.go:25: Version: V1.0.1
+2025/05/16 20:45:19 server.go:194: Listening on port 8080
+2025/05/16 20:45:59 server.go:99: Client connected: 192.168.236.1:52422 POST /
+2025/05/16 20:48:29 server.go:165: 
+接收到关闭信号，关闭程序...
+2025/05/16 20:56:12 main.go:25: Version: V1.0.1
+2025/05/16 20:56:12 server.go:194: Listening on port 8080
+2025/05/16 20:56:15 server.go:99: Client connected: 192.168.236.1:52929 POST /
+2025/05/16 20:57:20 server.go:99: Client connected: 192.168.236.1:52987 POST /
+2025/05/16 20:58:03 server.go:165: 
+接收到关闭信号，关闭程序...
+2025/05/16 20:58:29 main.go:25: Version: V1.0.1
+2025/05/16 20:58:29 server.go:194: Listening on port 8080
+2025/05/16 20:58:33 server.go:99: Client connected: 192.168.236.1:53044 POST /
+2025/05/16 20:58:33 StringProcessing.go:11: JSON data received: '{123}'
+2025/05/16 20:58:34 enterpriseWeChat.go:89: Message sent successfully
+2025/05/16 20:58:52 server.go:165: 
+接收到关闭信号，关闭程序...
+2025/05/16 20:58:53 main.go:25: Version: V1.0.1
+2025/05/16 20:58:53 server.go:194: Listening on port 8080
+2025/05/16 20:58:56 server.go:99: Client connected: 192.168.236.1:53064 POST /
+2025/05/16 20:58:56 StringProcessing.go:11: JSON data received: '{123}'
+2025/05/16 20:58:57 enterpriseWeChat.go:89: Message sent successfully
+2025/05/16 21:04:18 server.go:165: 
+接收到关闭信号，关闭程序...
+2025/05/16 21:05:13 main.go:25: Version: V1.0.1
+2025/05/16 21:05:13 server.go:195: Listening on port 8080
+2025/05/16 21:05:16 server.go:99: Client connected: 192.168.236.1:53485 POST /
+2025/05/16 21:05:16 server.go:123: Authentication keyword error: '{123}'
+2025/05/16 21:05:35 server.go:166: 
+接收到关闭信号，关闭程序...
+2025/05/16 21:08:33 main.go:25: Version: V1.0.1
+2025/05/16 21:08:33 server.go:195: Listening on port 8080
+2025/05/16 21:08:41 server.go:99: Client connected: 192.168.236.1:53740 POST /
+2025/05/16 21:08:41 StringProcessing.go:11: JSON data received: '{已经完成}'
+2025/05/16 21:08:44 enterpriseWeChat.go:89: Message sent successfully
+2025/05/16 21:09:12 server.go:99: Client connected: 192.168.236.1:53770 POST /
+2025/05/16 21:09:12 StringProcessing.go:11: JSON data received: '{哈哈}'
+2025/05/16 21:09:12 enterpriseWeChat.go:89: Message sent successfully
+2025/05/16 21:09:38 server.go:99: Client connected: 192.168.236.1:53815 POST /
+2025/05/16 21:09:38 StringProcessing.go:11: JSON data received: '换成什么样的}'
+2025/05/16 21:09:39 enterpriseWeChat.go:89: Message sent successfully
+2025/05/16 21:10:34 server.go:166: 
+接收到关闭信号，关闭程序...
+2025/05/16 21:12:13 main.go:25: Version: V1.0.1
+2025/05/16 21:12:13 server.go:195: Listening on port 8080
+2025/05/16 21:13:09 server.go:99: Client connected: 192.168.236.1:54022 POST /
+2025/05/16 21:13:09 StringProcessing.go:11: JSON data received: '换成什么样的}'
+2025/05/16 21:13:09 enterpriseWeChat.go:91: Message sent successfully
+2025/05/16 21:13:58 server.go:166: 
+接收到关闭信号，关闭程序...
+2025/05/16 21:15:53 main.go:25: Version: V1.0.1
+2025/05/16 21:15:53 server.go:195: Listening on port 8080
+2025/05/16 21:16:08 server.go:166: 
+接收到关闭信号，关闭程序...

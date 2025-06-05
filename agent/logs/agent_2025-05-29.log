@@ -1,0 +1,13 @@
+2025/05/29 21:12:09 main.go:21: Version: ViGiLix_Agent_V0.1.2
+2025/05/29 21:12:09 agent.go:80: Client 1 attempting to connect to ws://123.56.12.203:3000/login
+2025/05/29 21:12:11 agent.go:83: Connection failed: dial tcp 123.56.12.203:3000: connectex: No connection could be made because the target machine actively refused it., retrying in 10s
+2025/05/29 21:12:21 agent.go:80: Client 1 attempting to connect to ws://123.56.12.203:3000/login
+2025/05/29 21:12:23 agent.go:83: Connection failed: dial tcp 123.56.12.203:3000: connectex: No connection could be made because the target machine actively refused it., retrying in 10s
+2025/05/29 21:12:33 agent.go:80: Client 1 attempting to connect to ws://123.56.12.203:3000/login
+2025/05/29 21:12:35 agent.go:83: Connection failed: dial tcp 123.56.12.203:3000: connectex: No connection could be made because the target machine actively refused it., retrying in 10s
+2025/05/29 21:12:45 agent.go:80: Client 1 attempting to connect to ws://123.56.12.203:3000/login
+2025/05/29 21:12:47 agent.go:83: Connection failed: dial tcp 123.56.12.203:3000: connectex: No connection could be made because the target machine actively refused it., retrying in 10s
+2025/05/29 21:12:57 agent.go:80: Client 1 attempting to connect to ws://123.56.12.203:3000/login
+2025/05/29 21:12:57 agent.go:98: Client 1 connected successfully
+2025/05/29 21:12:57 send.go:26: Client 1 successfully sent ID
+2025/05/29 21:12:57 thresholdAlarm.go:65: [Alarm] 监控成功开启

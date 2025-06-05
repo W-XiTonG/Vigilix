@@ -1,0 +1,77 @@
+# WebSocket配置
+WebSocket:
+  ServerPort: 8081
+  # 读取 WebSocket 消息时的缓冲区大小
+  ReadBufferSize: 1024
+  # 写入 WebSocket 消息时的缓冲区大小
+  WriteBufferSize: 1024
+
+# xlsx表格配置
+Table:
+  # 是否开启表格生成
+  Status: true
+  # 表格输出目录
+  TablePaths: output
+
+# 按照JSON格式推送至其他服务
+Push:
+  # 是否开启推送其他（告警）服务,true为开启，false为关闭
+  PushStatus: true
+  # 推送地址
+  PushAddr: "http://192.168.236.153:8080"
+
+# 日志配置
+LogGer:
+  Status: true  # 日志总控制
+  OutStatus: true # 是否控制台输出
+  FileStatus: true # 是否日志文件控制
+  LogFile: logs/ # 日志目录
+
+ZabbixAlarm:
+  # zabbix告警是否开启
+  Status: true
+  # 调试模式开关
+  EnableDebug : false
+  # zabbix的URL
+  ZabbixURL: "http://192.168.236.153"
+  ZabbixUser: "Admin"
+  ZabbixPass: "zabbix"
+  GetIntervalMin: 10s # 触发器刷新间隔（最小值）
+  GetIntervalMax: 15s # 触发器刷新间隔（最大值）
+
+# agent连接ID
+Agents:
+  # 是否开启agent鉴权
+  AgentAuthenticationStatus: true
+  # 是否从数据库获取ID数据
+  DatabaseOrConfigurationFile: true
+  Id: # 填写说明：[AgentID: "Agent描述", "采集挂载点(例如：windows > C:,linux > /data)", "鉴权密钥"]（DatabaseOrConfigurationFile为false生效）
+    1: ["测试1","C:","123"]
+    2: ["测试2","/boot","456"]
+  # 是否开启心跳检测
+  DetectionStatus: true
+  # 心跳检测间隔
+  DetectionTime: 10s
+  # 心跳检测失败判断次数：如果不想心跳检测请设置为0
+  DetectionFrequency: 0
+
+ClientTool:
+  # 是否允许客户端连接工具
+  Status: true
+  # 是否从数据库获取client数据
+  DatabaseOrConfigurationFile: true
+  # client配置
+  ClientConfig:
+    # 填写说明: "账号": "密码"（DatabaseOrConfigurationFile为false生效）
+    "wxt": "wxt"
+    "wkx": "wkx"
+
+# DatabaseOrConfigurationFile为true生效
+Database:
+  DatabaseIP: "192.168.236.153"
+  DatabasePort: 3306
+  DatabaseName: "vigilix"
+  DatabaseUser: "root"
+  DatabasePass: "j4Dft^W8"
+  DatabaseParameter: "charset=utf8mb4&parseTime=True&loc=Local" # 查询参数（一般不用修改）
+

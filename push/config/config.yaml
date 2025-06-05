@@ -1,0 +1,91 @@
+# 状态配置
+Status:
+  Mail: false       # 邮件通知：false-关闭，true-开启
+  DingDing: false   # 钉钉通知：false-关闭，true-开启
+  SMS: false       # 短信通知：false-关闭，true-开启
+  EnterpriseWeChat: true  # 企业微信通知：false-关闭，true-开启
+
+# 日志配置
+LogGer:
+  Status: true  # 日志总控制
+  OutStatus: true # 是否控制台输出
+  FileStatus: true # 是否日志文件控制
+  LogFile: logs/  # 日志保存目录
+
+# 是否开启HTTP监听，通过json请求进行推送
+Listening:
+  Status: true        # 是否开启监听
+  Port: "8080"        # 监听端口
+  LineBreaksStatus: true  # 是否需要换行
+  LineBreaks: ","     # 传输数据换行符（LineBreaksStatus为true时生效）
+  MaxWorkers: 8     # 最大并发工作协程数（注意：不是最大并发，设置合理即可）建议：CPU 密集型：Worker ≈ CPU 核心数；I/O 密集型：Worker = CPU 核心数 × 2~5
+  QueueSize: 100000    # 任务队列容量
+  WorkerTimeout: 30s  # 单个任务超时时间
+  AuthenticationStatus: false # 是否开启鉴权（开启后当收到未包含鉴权关键字的不推送）
+  AuthenticationKeyword: "IP" # 鉴权关键字，AuthenticationStatus为true时生效
+  DeleteStringStatus: true  # 是否在接收数据中删除指定字符串
+  DeleteString: "{}'"  # 需要删除的字符串，DeleteStringStatus为true时生效
+
+# 内容配置
+ContentS:
+  Type: 2       # 内容类型：0:从各自配置获取内容；1:从File文件内获取内容；2:统一内容:Content
+  File: "data/output.txt"  # 内容输出文件路径
+  Content: "统一内容测试"  # 统一内容，Listening-Status打开时不生效
+
+# 邮件配置
+Mail:
+  SenderEmail: "2751799737@qq.com"  # 发件人邮箱
+  SenderPassword: "eczmbyhjnzpndeeg"  # 发件人邮箱密码（或授权码）
+  SmtpServer: "smtp.qq.com:587"  # SMTP 服务器地址
+  ReceiverEmail: "15550151751@163.com"  # 收件人邮箱
+  CcEmails: # 抄送人邮箱列表
+    - "15550151751@163.com"
+    - "15550151751@163.com"
+  Subject: "辽宁行业网关监控告警"  # 邮件主题
+  Body: "邮件内容测试"  # 邮件正文
+
+# 钉钉配置
+DingDing:
+  WebhookURL: "https://oapi.dingtalk.com/robot/send?access_token=65c4b61421806480bd0a8da416fc04bd8f3179fbb7fd0e207119b49ba5086431"  # 钉钉机器人 Webhook URL
+  Secret: "SEC813e67a43cd735a8f537aac25f304f11753688b1ed78cc4db7af7163e420e5ad"  # 钉钉机器人 Secret
+  Message: "钉钉测试内容"  # 钉钉消息内容
+
+# 短信配置
+SMS:
+  Type: 0  # 短信类型：0-SGIP 协议,1-调用命令
+  # Type：0时生效
+  Sgip:
+    LoginName: "wxt"  # SGIP 登录用户名
+    LoginPassword: "wxt"  # SGIP 登录密码
+    SmgIpPort: "192.168.236.159:3333"  # SGIP 服务器地址和端口
+    SPNumber: "106510531751"  # SP 号码
+    ChargeNumber: "000000000000000000000"  # 计费号码
+    UserNumber:  # 被叫号码
+      - "18907500000"
+      - "10050151751"
+    CorpID: "15550"  # 企业代码
+    ServiceType: "155501"  # 业务类型代码
+    Message: "短信测试"  # 短信内容
+  
+  # Type：1时生效
+  Command:  # 短信发送命令
+    - "java"
+    - "/root/push/push/SgipSend"
+
+EnterpriseWeChat:
+  WebhookURL: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=00d92189-0ed3-4dce-8408-457f82ebea31"
+  Message: "企业微信测试"
+  AteSpecifyStatus: false # 是否@指定人
+  MentionedMobileList:  # @指定人（AteSpecifyStatus为true生效）：输入"手机号"，或者 "@all"：@所有人
+    - ""
+    - ""
+
+# 前置和后置命令配置
+BeforeAndAfterCommands: # 设置执行脚本之前和之后需要指定的命令
+  BeforeStatus: false  # 前置命令状态：false-关闭，true-开启
+  BeforeStatusCommand:  # 前置命令
+    - "bash"
+    - "scripts/build_smg_test.sh"
+  AfterStatus: false  # 后置命令状态：false-关闭，true-开启
+  AfterCommand:   # 后置命令
+    -
